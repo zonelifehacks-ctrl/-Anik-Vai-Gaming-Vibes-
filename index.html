@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anik Playz</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: url('your-background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
+
+    /* Background Text Watermark */
+    .watermark {
+      position: absolute;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 45px;
+      font-weight: bold;
+      opacity: 0.2;
+      color: #fff;
+      text-shadow: 0 0 20px #ff00ff, 0 0 40px #00ffff;
+      z-index: 0;
+    }
+
+    .buttons {
+      margin-top: 300px; /* নিচে নামানো হলো */
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+      z-index: 1;
+      position: relative;
+    }
+
+    .btn {
+      width: 250px;
+      padding: 15px;
+      border: none;
+      border-radius: 15px;
+      font-size: 20px;
+      font-weight: bold;
+      color: white;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      position: relative;
+      animation: rgbGlow 3s infinite linear;
+    }
+
+    /* RGB Glow Animation */
+    @keyframes rgbGlow {
+      0% { box-shadow: 0 0 15px red; }
+      25% { box-shadow: 0 0 15px blue; }
+      50% { box-shadow: 0 0 15px green; }
+      75% { box-shadow: 0 0 15px purple; }
+      100% { box-shadow: 0 0 15px red; }
+    }
+
+    .youtube { background: #ff0000; }
+    .facebook { background: #1877f2; }
+    .tiktok { background: #000000; }
+    .email { background: #e74c3c; }
+    .whatsapp { background: #25d366; }
+    .ffbuy { background: linear-gradient(90deg, orange, red); }
+
+    /* FF Logo with text */
+    .ffbuy img {
+      width: 28px;
+      height: 28px;
+      border-radius: 6px;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 14px;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+  <!-- Watermark Text -->
+  <div class="watermark">♛『Aɴɪᴋ』Pʟᴀʏᴢ♛</div>
+
+  <!-- Buttons Section -->
+  <div class="buttons">
+    <button class="btn youtube">▶ YouTube</button>
+    <button class="btn facebook">f Facebook</button>
+    <button class="btn tiktok">TikTok</button>
+    <button class="btn email">✉ Email</button>
+    <button class="btn whatsapp">☏ WhatsApp</button>
+    <button class="btn ffbuy">
+      <img src="ff-logo.png" alt="FF Logo"> FF I’d Buy Contact 01340183911
+    </button>
+  </div>
+
+  <!-- Footer -->
+  <footer>© 2025 ♛『Aɴɪᴋ』Pʟᴀʏᴢ♛ All Rights Reserved</footer>
+</body>
+</html>
